@@ -1,4 +1,3 @@
-# FROG_JUMP_DICE_ROLLER
 # FROG JUMP DOUBLE DICE ROLLER
 
 Welcome to **FROG JUMP DOUBLE DICE ROLLER** – a fun and interactive Android application designed with kids in mind. This engaging game combines the excitement of rolling dice with the delight of watching a frog jump on your screen. With two captivating themes, Black and White or Colorful, and customizable settings, it's an entertaining experience for children.
