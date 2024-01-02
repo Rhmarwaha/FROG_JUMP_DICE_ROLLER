@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/totalLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/totaltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  T O T A L  "
+            android:textColor="@android:color/black"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:background="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:textColor="@android:color/white"
+            android:background="@drawable/text_background"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:paddingRight="30dp"
+            android:paddingLeft="30dp"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/frog_gif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageLinearLayout"
+        android:layout_above="@+id/switchLinaerLayout"
+        android:src="@drawable/frogimage"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/imageLinearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/totalLayout">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/dice_value_1"/>
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/dice_value_6"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/switchLinaerLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/rollDices"
+        android:layout_margin="4dp"
+        android:layout_centerHorizontal="true">
+        <TextView
+            android:text="Vibration"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"/>
+        <Switch
+            android:id="@+id/vibrationCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:trackTint="@drawable/new_track"
+            android:thumbTint="@drawable/new_thumb"/>
+        <TextView
+            android:text="Speak"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="30dp"/>
+        <Switch
+            android:id="@+id/speakCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:trackTint="@drawable/new_track"
+            android:thumbTint="@drawable/new_thumb"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/rollDices"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:text="Roll Dices"
+        android:textSize="50sp"
+        android:background="@drawable/text_background"
+        android:textColor="@android:color/white"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="4dp"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>
